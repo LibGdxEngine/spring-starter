@@ -1,4 +1,4 @@
-package com.example.security.demo;
+package com.example.security.home;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

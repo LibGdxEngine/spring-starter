@@ -1,5 +1,7 @@
 package com.example.security.auth;
 
+import com.example.security.auth.dto.AuthenticationResponse;
+import com.example.security.auth.dto.RegisterRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;

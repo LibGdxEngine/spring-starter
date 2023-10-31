@@ -21,3 +21,5 @@ services:
       MYSQL_DATABASE: mydb
       MYSQL_USER: ahmed
       MYSQL_PASSWORD: ahmed1998
+    volumes:
+      - /mysql-database-volume:/var/lib/mysql

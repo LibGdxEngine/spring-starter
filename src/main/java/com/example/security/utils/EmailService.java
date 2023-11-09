@@ -11,10 +11,13 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor
 public class EmailService {
-
     private final JavaMailSender mailSender;
+    @Autowired
+    public EmailService(JavaMailSender mailSender){
+        this.mailSender = mailSender;
+    }
+
     @Value("spring.mail.username")
     private String from;
     public void sendEmailToMany(String[] to, String subject, String body) {

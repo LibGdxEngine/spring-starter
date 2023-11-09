@@ -1,9 +1,11 @@
 package com.example.security.config;
 
 import com.example.security.user.UserRepository;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -49,5 +51,6 @@ public class ApplicationConfig {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
 
 }
